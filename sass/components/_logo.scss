@@ -1,0 +1,16 @@
+.logo {
+  display: block;
+  // margin-right: 93px;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  &__web {
+    color: $blue;
+  }
+  &__studio {
+    color: $black;
+  }
+}
