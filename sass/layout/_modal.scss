@@ -175,7 +175,7 @@
 
 .policy__label {
   display: flex;
-  flex-wrap: wrap;
+
   align-items: center;
   // justify-content: center;
   // justify-content: space-between;
@@ -220,14 +220,30 @@
 }
 
 .policy__link {
-  margin-left: 5px;
+  // margin-left: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.166px;
 
-  font-size: 14px;
-  line-height: 24px;
-  /* identical to box height, or 171% */
   letter-spacing: 0.03em;
 
+  // font-size: 14px;
+  // line-height: 24px;
+  // /* identical to box height, or 171% */
+  // letter-spacing: 0.03em;
+
   color: $blue;
+}
+.policy__agree {
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.166px;
+
+  letter-spacing: 0.03em;
+
+  color: $grey;
 }
 
 .button__form {

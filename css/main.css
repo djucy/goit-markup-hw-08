@@ -951,8 +951,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -993,12 +991,20 @@ img {
 }
 
 .policy__link {
-  margin-left: 5px;
-  font-size: 14px;
-  line-height: 24px;
-  /* identical to box height, or 171% */
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.166px;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+
+.policy__agree {
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.166px;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .button__form {
