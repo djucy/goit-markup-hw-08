@@ -37,9 +37,9 @@
 //   }
 // }
 .worker__box {
-  width: 450px;
+  // width: 450px;
 
-  padding: 30px 122px 24px 122px;
+  padding: 30px 15px 24px 15px;
 }
 
 .worker {
@@ -65,6 +65,9 @@
     color: $grey;
   }
 }
+.team__pic {
+  width: 100%;
+}
 .social__list {
   display: flex;
   justify-content: center;
@@ -73,15 +76,15 @@
 
   padding-left: 0;
 }
-.social__list {
-  .social__item {
-    & + & {
-      .social__list & {
-        margin-left: 10px;
-      }
+
+.social__item {
+  & + & {
+    .social__list & {
+      margin-left: 10px;
     }
   }
 }
+
 .social__link {
   display: flex;
   justify-content: center;

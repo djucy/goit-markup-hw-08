@@ -147,7 +147,9 @@
   // z-index: 900;
   transform: translateY(-100%);
 }
-
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
 .container--mobile.is-open {
   transform: translateY(0);
 }

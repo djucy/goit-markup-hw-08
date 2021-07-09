@@ -41,11 +41,16 @@
 // }
 
 .section__hero {
+  text-align: center;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
+
   margin-left: auto;
   margin-right: auto;
 
-  width: 480px;
-  height: 400px;
+  max-width: 480px;
+  // height: 400px;
 
   background: $black-rock;
   background-image: linear-gradient(
@@ -62,13 +67,14 @@
   }
 }
 
-.container__hero {
-  padding: 118px 60px;
-}
+// .container__hero {
+//   padding: 118px 60px;
+// }
 
 .hero {
   margin-bottom: 30px;
-
+  margin-left: auto;
+  margin-right: auto;
   //   width: 696px;
 
   font-family: Roboto;
