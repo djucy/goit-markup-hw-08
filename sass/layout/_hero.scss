@@ -48,11 +48,17 @@
 
   margin-left: auto;
   margin-right: auto;
+  background: $black-rock;
+  @media screen and(max-width:767px) {
+    max-width: 480px;
+  }
+  @media screen and(max-width:1199px) {
+    max-width: 768px;
+    min-height: 400px;
+  }
 
-  max-width: 480px;
   // height: 400px;
 
-  background: $black-rock;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -62,16 +68,51 @@
   /* background-repeat: no-repeat; */
   background-position: center;
   background-size: cover;
-  @media (min-resolution: 2dppx) {
-    background-image: url(../../images/hero/hero-mobile@2x.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero/hero-mobile@2x.jpg);
   }
 }
 
+@media screen and(min-width:489px) {
+  .section__hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero/hero-tablet.jpg);
+      background-position: center;
+      background-size: cover;
+  }
+  
+  @media screen and(min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .section__hero {
+        background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero/hero-tablet@2x.jpg);}
+    }
+  }
 // .container__hero {
 //   padding: 118px 60px;
 // }
 
 .hero {
+  display: block;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -81,14 +122,21 @@
   font-style: normal;
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.615;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $white;
+
+@media screen and(min-width:768px) {
+  margin-left: 189px;
+  margin-right: 189px;
+} 
+  
+
 }
+
 
 .button__hero {
   // margin-bottom: 200px;
-  padding: 10px 32px 10px 32px;
-}
+  padding: 10px 32px 10px 32px;}

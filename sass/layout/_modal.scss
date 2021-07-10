@@ -177,9 +177,12 @@
   display: flex;
 
   align-items: center;
-  // justify-content: center;
+  justify-content: center;
   // justify-content: space-between;
   margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .policy__input--hidden {
@@ -234,17 +237,18 @@
 
   color: $blue;
 }
-.policy__agree {
-  text-align: center;
+// .policy__agree {
+//   // display: flex;
+//   text-align: center;
 
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.166px;
+//   font-weight: 400;
+//   font-size: 12px;
+//   line-height: 1.166px;
 
-  letter-spacing: 0.03em;
+//   letter-spacing: 0.03em;
 
-  color: $grey;
-}
+//   color: $grey;
+// }
 
 .button__form {
   padding: 10px 55px;

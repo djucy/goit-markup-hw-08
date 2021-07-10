@@ -13,4 +13,35 @@
   &__studio {
     color: $black;
   }
+  @media screen and(min-width:768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-right: 93px;
+  }
 }
+
+// .logo--tablet {
+//   display: block;
+
+//   font-family: Raleway;
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.192;
+//   letter-spacing: 0.03em;
+//   text-decoration: none;
+//   &__web--tablet {
+//     color: $blue;
+//   }
+//   &__studio--tablet {
+//     color: $black;
+//   }
+//   @media screen and(min-width:768px) {
+//     margin-right: 88px;
+//   }
+
+//   @media screen and(min-width:1200px) {
+//     margin-right: 93px;
+//   }
+// }
