@@ -519,6 +519,15 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantage__list .item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 }
 

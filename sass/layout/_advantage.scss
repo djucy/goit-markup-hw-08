@@ -39,13 +39,20 @@
   }
 @media screen and(min-width:768px) {
   display: flex;
-  
+ margin: -15px;
+}}
+
+.advantage__list .item {
+  @media screen and(min-width:768px) {
+   flex-basis: calc((100% - 60px) / 2);
+   margin: 15px; 
+
+  }
 }
 
 
 
 
-}
 
 .advantage__box {
   display: flex;
