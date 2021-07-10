@@ -81,8 +81,8 @@
 
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="./index.html">Студия</a></li>
-                    <li class="nav__item"><a class="nav__link nav__link--active" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav__item"><a class="nav__link  nav__link--active" href="./index.html">Студия</a></li>
+                    <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="nav__item"><a class="nav__link" href="#contact">Контакты</a></li>
                 </ul>
             </nav>
@@ -208,22 +208,38 @@
             
             <div class="container">
                 <h2 class="caption">Чем мы занимаемся</h2>
-                <ul class="list">
+                <ul class="work__list">
                     <li class="work__image">
                         <div>
-                        <img src="./images/box1.jpg" alt="На деревянном столе стоят компьютер и планшет.На их экране изображены написанные коды. Рядом с планшетом лежит клавиатура. Человек печатает на клавиатуре, создавая эти коды " width="370">
+                        <img 
+                        srcset="
+                        images/what-we-doing/desktop.jpg 370w
+                        images/what-we-doing/desktop@2x.jpg 740w"
+                        sizes="(min-width:1200px) 370w"
+                        src="./images/what-we-doing/desktop.jpg" alt="На деревянном столе стоят компьютер и планшет.На их экране изображены написанные коды. Рядом с планшетом лежит клавиатура. Человек печатает на клавиатуре, создавая эти коды " width="370">
                         <p class="work__title">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="work__image">
                         <div>
-                        <img src="./images/box2.jpg" alt="Человек создает дизайн программы для мобильных устройств. Одна его рука лежит на клавиатуре, в другой руке он держит мобильный телефон" width="370">
+                        <img
+                        srcset="
+                        images/what-we-doing/mobile.jpg 370w
+                        images/what-we-doing/mobile@2x.jpg"
+                        sizes="(min-width:1200px) 370w"
+
+                        src="./images/what-we-doing/mobile.jpg" alt="Человек создает дизайн программы для мобильных устройств. Одна его рука лежит на клавиатуре, в другой руке он держит мобильный телефон" width="370">
                     <p class="work__title">Мобильные приложения</p>
                     </div>
                     </li>
                     <li class="work__image">
                        <div>
-                        <img src="./images/box3.jpg" alt="Человек держит в одной руке планшет, в другой стилус . На планшете изображена цветовая палитра" width="370">
+                        <img
+                        srcset="
+                        images/what-we-doing/design.jpg 370w
+                        images/what-we-doing/design.jpg 740w"
+                        sizes="(min-width:1200px) 370w"
+                        src="./images/what-we-doing/design.jpg" alt="Человек держит в одной руке планшет, в другой стилус . На планшете изображена цветовая палитра" width="370">
                         <p class="work__title">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -240,12 +256,13 @@
                     <li  class="item">
                         <div>
                             <img class="team__pic"
-                        srcset="./images/team-member/demjanenko-desktop.jpg 270w,
-                        ./images/team-member/demjanenko-tablet.jpg 354w,
-                        ./images/team-member/demjanenko-mobile.jpg 450w,
-                        ./images/team-member/demjanenko-desktop@2x.jpg 540w,
-                        ./images/team-member/demjanenko-tablet@2x.jpg 708w,
-                        ./images/team-member/demjanenko-mobile@2x.jpg 900w"
+                        srcset="
+                        images/team-member/demjanenko-desktop.jpg 270w,
+                        images/team-member/demjanenko-desktop@2x.jpg 540w,
+                        images/team-member/demjanenko-tablet.jpg 354w,
+                        images/team-member/demjanenko-tablet@2x.jpg 708w,
+                        images/team-member/demjanenko-mobile.jpg 450w,
+                        images/team-member/demjanenko-mobile@2x.jpg 900w"
                         sizes="(min-width:1200px) 270w, (min-width:768px) 354w, (min-width:480px) 450w"
                         src="./images/team-member/demjanenko-mobile.jpg" alt="Игорь Демьяненко" >
                         <div class="worker__box">
@@ -287,12 +304,13 @@
                     </li>
                     <li class="item">
                         <div><img class="team__pic"
-                            srcset="./images/team-member/repina-desktop.jpg 270w,
-                            ./images/team-member/repina-tablet.jpg 354w,
-                            ./images/team-member/repina-mobile.jpg 450w, 
-                            ./images/team-member/repina-desktop@2x.jpg 540w,        
-                            ./images/team-member/repina-tablet@2x.jpg 708,
-                            ./images/team-member/repina-mobile@2x.jpg 900w"
+                            srcset="
+                            images/team-member/repina-desktop.jpg 270w,
+                            images/team-member/repina-desktop@2x.jpg 540w,   
+                            images/team-member/repina-tablet.jpg 354w,
+                            images/team-member/repina-tablet@2x.jpg 708,
+                            images/team-member/repina-mobile.jpg 450w, 
+                            images/team-member/repina-mobile@2x.jpg 900w"
                             sizes="(min-width:1200px) 270w, (min-width:768px) 354w, (min-width:480px) 450w"
                             src="./images/team-member/repina-mobile.jpg" alt="Ольга Репина">
                             <div class="worker__box">
@@ -335,13 +353,14 @@
                     <li class="item">
                         <div>
                             <img class="team__pic"
-                        srcset="./images/team-member/tarasov-desktop.jpg 270w,
-                        ./images/team-member/tarasov-tablet.jpg 354w,
-                        ./images/team-member/tarasov-mobile.jpg 450w,
-                         ./images/team-member/tarasov-desktop@2x.jpg 540w,
-                               ./images/team-member/tarasov-tablet@2x.jpg 708w, 
-                         ./images/team-member/tarasov-mobile@2x.jpg 900w"
-                                sizes="(min-width:1200px) 270w, (min-width:768px) 354w, (min-width:480px 450w)"
+                        srcset="
+                        images/team-member/tarasov-desktop.jpg 270w,
+                        images/team-member/tarasov-desktop@2x.jpg 540w,
+                        images/team-member/tarasov-tablet.jpg 354w,
+                        images/team-member/tarasov-tablet@2x.jpg 708w, 
+                        images/team-member/tarasov-mobile.jpg 450w,      
+                        images/team-member/tarasov-mobile@2x.jpg 900w"
+                        sizes="(min-width:1200px) 270w, (min-width:768px) 354w, (min-width:480px 450w)"
                         src="./images/team-member/tarasov-mobile.jpg" 
                             alt="Николай Тарасов">
                         <div class="worker__box">
@@ -384,14 +403,15 @@
                     <li class="item">
                         <div>
                             <img class="team__pic"
-                        srcset="./images/team-member/ermakov-desktop.jpg 270w,
-                        ./images/team-member/ermakov-tablet.jpg 354w,
-                        ./images/team-member/ermakov-mobile.jpg 450w, 
-                        ./images/team-member/ermakov-desktop@2x.jpg 540w,
-                        ./images/team-member/ermakov-tablet@2x.jpg 708w,
-                        ./images/team-member/ermakov-mobile@2x.jpg 900w"
+                        srcset="
+                        images/team-member/ermakov-desktop.jpg 270w,
+                        images/team-member/ermakov-desktop@2x.jpg 540w,
+                        images/team-member/ermakov-tablet.jpg 354w,
+                        images/team-member/ermakov-tablet@2x.jpg 708w,
+                        images/team-member/ermakov-mobile.jpg 450w, 
+                        images/team-member/ermakov-mobile@2x.jpg 900w"
                         sizes="(min-width:1200px) 270w, (min-width:768px) 354w, (min-width:480px 450w)"
-                                src="./images/team-member/ermakov-mobile.jpg" alt="Михаил Ермаков">
+                        src="./images/team-member/ermakov-mobile.jpg" alt="Михаил Ермаков">
                         <div class="worker__box">
                             <h3 class="worker__name">Михаил Ермаков</h3>
                             <p class="worker__duty">UI Designer</p>

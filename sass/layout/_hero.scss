@@ -1,45 +1,14 @@
-// .section__hero {
-//   margin-left: auto;
-//   margin-right: auto;
 
-//   max-width: 1600px;
-//   height: 600px;
 
-//   background: $black-rock;
-//   background-image: linear-gradient(
-//       to right,
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url(../images/hero-img.jpg);
-//   /* background-repeat: no-repeat; */
-//   background-position: center;
-//   background-size: cover;
-// }
 
-// .hero {
-//   margin-top: 200px;
-//   margin-bottom: 30px;
-//   margin-left: auto;
-//   margin-right: auto;
 
-//   width: 696px;
 
-//   font-weight: 900;
-//   font-size: 44px;
-//   line-height: 1.363;
-//   text-align: center;
-//   letter-spacing: 0.06em;
-//   text-transform: uppercase;
 
-//   color: $white;
-// }
+  
 
-// .button__hero {
-//   margin-bottom: 200px;
-//   padding: 10px 32px 10px 32px;
-// }
-
+  
+ 
+  
 .section__hero {
   text-align: center;
 
@@ -55,6 +24,12 @@
   @media screen and(max-width:1199px) {
     max-width: 768px;
     min-height: 400px;
+  }
+  @media screen and(min-width:1200px) {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 
   // height: 400px;
@@ -107,10 +82,52 @@
       url(../../images/hero/hero-tablet@2x.jpg);}
     }
   }
+
+  @media screen and(min-width:769px) {
+    .section__hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/hero/hero-desktop.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    @media screen and(min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        .section__hero {
+          background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/hero/hero-desktop@2x.jpg);}
+      }
+    }
 // .container__hero {
 //   padding: 118px 60px;
 // }
 
+  //   margin-top: 200px;
+  //   margin-bottom: 30px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  
+  //   width: 696px;
+  
+  //   font-weight: 900;
+  //   font-size: 44px;
+  //   line-height: 1.363;
+  //   text-align: center;
+  //   letter-spacing: 0.06em;
+  //   text-transform: uppercase;
+  
+  //   color: $white;
+  // }
 .hero {
   display: block;
   margin-bottom: 30px;
@@ -132,11 +149,23 @@
   margin-left: 189px;
   margin-right: 189px;
 } 
+@media screen and(min-width:1200px){
+  // margin-top: 200px;
+   
+    margin-left: auto;
+    margin-right: auto;
   
+    width: 696px;
+  
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.363;
 
-}
+}}
 
 
 .button__hero {
-  // margin-bottom: 200px;
+
   padding: 10px 32px 10px 32px;}
+
+  

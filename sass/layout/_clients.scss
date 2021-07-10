@@ -46,7 +46,10 @@
 @media screen and(min-width:768px){
 flex-basis: calc((100%-90px) / 3);
 max-width: 226px;
-
+}
+@media screen and(min-width:1200px){
+  flex-basis: calc((100%-180px) / 6);
+max-width: 170px;
 }
 }
 

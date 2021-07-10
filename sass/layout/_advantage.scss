@@ -1,11 +1,4 @@
-// .advantage__list {
-//   display: flex;
 
-//   list-style-type: none;
-//   margin: 0px;
-//   padding: 0px;
-
-// }
 //  .item {
 //      &+& {
 //          .advantage__list &
@@ -15,17 +8,8 @@
 //      }
 //  }
 
-// .advantage__box {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-//   margin-bottom: 30px;
-
-//   height: 120px;
-//   background-color: #f5f4fa;
-//   border-radius: 4px;
-// }
+// 
+// 
 
 .advantage__list {
   // display: flex;
@@ -53,7 +37,10 @@
   @media screen and(min-width:768px) {
    flex-basis: calc((100% - 60px) / 2 );
    margin: 15px; 
-
+}
+  
+@media screen and(min-width:1200px){
+    flex-basis: calc((100% - 120px) / 4 );
   }
 }
 
@@ -73,3 +60,6 @@
   border-radius: 4px;
   
 }
+
+ 
+  

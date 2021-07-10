@@ -1,13 +1,13 @@
-// .work__section {
-//   padding-top: 0px;
-// }
+
+.work__list{
+  display: flex;
+  margin: -15px;
+}
 
 .work__image {
   position: relative;
-
-  & + & {
-    margin-left: 30px;
-  }
+margin: 15px;
+flex-direction: calc((100%-90px) / 3);
 }
 
 .work__title {
@@ -33,6 +33,8 @@
 }
 
 .work__section {
+  
+  padding-top: 0px;
   @media (max-width: 1199px) {
     display: none;
   }

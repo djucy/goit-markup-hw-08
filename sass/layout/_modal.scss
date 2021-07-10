@@ -55,6 +55,10 @@ padding: 40px;
   }
   @media screen and(min-width:839px) {
     width: 521px;}
+    @media screen and(min-width:1200px) {
+    min-height: 581px;
+    min-width: 528px; }
+    
 }
 
 .button__close {
@@ -207,7 +211,9 @@ width:100%;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-}
+ 
+  }
+
 
 .policy__input--hidden {
   position: absolute;
@@ -245,16 +251,7 @@ width:100%;
     outline-width: 5px;
   }
 }
-.policy__agree{
-  display: block;
-  font-weight: 400;
-font-size: 12px;
-line-height: 1.166;
-letter-spacing: 0.03em;
 
-color: $grey;
-
-}
 .policy__link {
   // margin-left: 5px;
   font-weight: 400;
@@ -263,25 +260,27 @@ color: $grey;
 
   letter-spacing: 0.03em;
 
-  // font-size: 14px;
-  // line-height: 24px;
-  // /* identical to box height, or 171% */
-  // letter-spacing: 0.03em;
-
   color: $blue;
+   
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  }
 }
-// .policy__agree {
-//   // display: flex;
-//   text-align: center;
+.policy__agree {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.166px;
+  letter-spacing: 0.03em;
 
-//   font-weight: 400;
-//   font-size: 12px;
-//   line-height: 1.166px;
-
-//   letter-spacing: 0.03em;
-
-//   color: $grey;
-// }
+  color: $grey;
+  @media screen and(min-width:1200px) {
+  
+  font-size: 14px;
+  line-height: 1.71;
+  
+}}
 
 .button__form {
   padding: 10px 55px;

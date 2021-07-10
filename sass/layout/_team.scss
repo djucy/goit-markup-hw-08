@@ -47,9 +47,13 @@ flex-wrap: wrap;
   margin: 15px;
   width: 354px;
 ;
+} }
+@media screen and(min-width:1200px){
+  .list .item {
+  width: 270px;
+  }  
 }
-  
-}
+
 // .item {
 //   & + & {
 //     .list & {
