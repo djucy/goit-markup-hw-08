@@ -42,7 +42,14 @@
   margin-right: 30px;
   margin-bottom: 30px;
   max-width: 210px;
+
+@media screen and(min-width:768px){
+flex-basis: calc((100%-90px) / 3);
+max-width: 226px;
+
 }
+}
+
 // .client__item:nth-child(2n) {
 //   // width: calc((100%-2 * 30px) / 2);
 //   margin-right: 30px;

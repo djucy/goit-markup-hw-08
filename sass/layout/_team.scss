@@ -18,17 +18,38 @@
   background-color: $lavender;
 }
 
+.team__section .list {
+  @media screen and(min-width:768px) {
+display: flex;
+flex-wrap: wrap;
+
+   margin: -15px;
+
+  }
+}
+
 .list .item {
   background-color: $white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  &:not(:last-child) {
+ &:not(:last-child) {
+  @media screen and(max-width:767px){
+   
     margin-bottom: 30px;
   }
 }
 
+}
+@media screen and(min-width:768px) {
+  .list .item {
+  margin: 15px;
+  width: 354px;
+;
+}
+  
+}
 // .item {
 //   & + & {
 //     .list & {
@@ -44,11 +65,12 @@
 
 .worker {
   &__name {
+    display: block;
     margin-bottom: 10px;
 
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.187px;
+    line-height: 1.187;
     text-align: center;
     letter-spacing: 0.03em;
   }
@@ -66,6 +88,7 @@
   }
 }
 .team__pic {
+  display: block;
   width: 100%;
 }
 .social__list {
