@@ -812,22 +812,34 @@ img {
   background-color: #2196f3;
 }
 
-.client__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+@media screen and (min-width: 480px) {
+  .client__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
 }
 
-.client__item {
-  -ms-flex-preferred-size: calc((100%-60px) / 2);
-      flex-basis: calc((100%-60px) / 2);
-  margin-right: 30px;
-  margin-bottom: 30px;
-  max-width: 210px;
+@media screen and (min-width: 375px) {
+  .client__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    -ms-flex-preferred-size: calc((100%-60px) / 2);
+        flex-basis: calc((100%-60px) / 2);
+  }
+}
+@media screen and (min-width: 480px) {
+  .client__item {
+    -ms-flex-preferred-size: calc((100%-60px) / 2);
+        flex-basis: calc((100%-60px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    max-width: 210px;
+  }
 }
 @media screen and (min-width: 768px) {
   .client__item {
@@ -1624,7 +1636,7 @@ img {
 .policy__agree {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.166px;
+  line-height: 1.166;
   letter-spacing: 0.03em;
   color: #757575;
 }

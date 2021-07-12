@@ -1,19 +1,32 @@
 
 
 .client__list {
-  display: flex;
+
+  @media screen and(min-width:480px){
+    display: flex;
   flex-wrap: wrap;
 
   margin-right: -30px;
-  margin-bottom: -30px;
+  margin-bottom: -30px;}
+  
 }
 .client__item {
+  @media screen and(min-width:375px){
+    margin-right: 30px;
+    margin-bottom: 30px;
+    flex-basis: calc((100%-60px) / 2)
   
-  flex-basis: calc((100%-60px) / 2);
+  
+  }
+
+  
+  @media screen and(min-width:480px){
+    flex-basis: calc((100%-60px) / 2);
   margin-right: 30px;
   margin-bottom: 30px;
   max-width: 210px;
-
+}
+  
 @media screen and(min-width:768px){
 flex-basis: calc((100%-90px) / 3);
 width: 226px;
