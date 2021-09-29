@@ -2,6 +2,7 @@
   // @media screen and(min-width:320px){
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   margin-left: -30px;
   margin-top: -30px;
@@ -17,15 +18,15 @@
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100%-60px) / 2);
-  max-width: 210px;
+  min-width: 210px;
 
   @media screen and(min-width:768px) {
     flex-basis: calc((100%-90px) / 3);
-    max-width: 226px;
+    min-width: 226px;
   }
   @media screen and(min-width:1200px) {
     flex-basis: calc((100%-180px) / 6);
-    // max-width: 170px;
+    min-width: 170px;
   }
 }
 
