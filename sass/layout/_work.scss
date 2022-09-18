@@ -7,7 +7,7 @@
 .work__image {
   position: relative;
 margin: 15px;
-flex-direction: calc((100%-90px) / 3);
+width: calc((100% - 90px) / 3);
 }
 
 .work__title {
